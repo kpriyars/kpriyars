@@ -1,159 +1,63 @@
-<!-- ====================================================== -->
-<!--                         BANNER                         -->
-<!-- ====================================================== -->
+<!--header-->
+<table>
+  <tr><td colspan="2"><a href="/README.md#-plugins">← Back to plugins index</a></td></tr>
+  <tr><th colspan="2"><h3>📅 Isometric commit calendar</h3></th></tr>
+  <tr><td colspan="2" align="center"><p>This plugin displays an isometric view of a user commit calendar along with a few additional statistics like current streak and average number of commit per day.</p>
+</td></tr>
+  <tr><th>⚠️ Disclaimer</th><td><p>This plugin is not affiliated, associated, authorized, endorsed by, or in any way officially connected with <a href="https://github.com">GitHub</a>.
+All product and company names are trademarks™ or registered® trademarks of their respective holders.</p>
+</td></tr>
+  <tr>
+    <th rowspan="3">Supported features<br><sub><a href="metadata.yml">→ Full specification</a></sub></th>
+    <td><a href="/source/templates/classic/README.md"><code>📗 Classic template</code></a> <a href="/source/templates/terminal/README.md"><code>📙 Terminal template</code></a></td>
+  </tr>
+  <tr>
+    <td><code>👤 Users</code></td>
+  </tr>
+  <tr>
+    <td><code>🔑 (scopeless)</code> <code>read:org (optional)</code> <code>read:user (optional)</code> <code>read:packages (optional)</code> <code>repo (optional)</code></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <details open><summary>Full year calendar</summary><img src="https://github.com/lowlighter/metrics/blob/examples/metrics.plugin.isocalendar.fullyear.svg" alt=""></img></details>
+      <details><summary>Half year calendar</summary><img src="https://github.com/lowlighter/metrics/blob/examples/metrics.plugin.isocalendar.svg" alt=""></img></details>
+      <img width="900" height="1" alt="">
+    </td>
+  </tr>
+</table>
+<!--/header-->
 
-<p align="center">
-  <img src="YOUR_BANNER_URL" width="100%" />
-</p>
+## ➡️ Available options
 
-<br/>
-
-<!-- ====================================================== -->
-<!--                       INTRO LINE                       -->
-<!-- ====================================================== -->
-
-<h1 align="center">your name</h1>
-
-<p align="center">
-  <i>
-    software · ai/ml · bioinformatics
-  </i>
-</p>
-
-<br/>
-
-<p align="center">
-  from <b>city, country</b>
-</p>
-
-<br/>
-<br/>
-
-<!-- ====================================================== -->
-<!--                    VISUAL DIVIDER                      -->
-<!-- ====================================================== -->
-name: Full-year calendar
-uses: lowlighter/metrics@latest
-with:
-  filename: metrics.plugin.isocalendar.fullyear.svg
-  token: ${{ secrets.METRICS_TOKEN }}
-  base: ""
-  plugin_isocalendar: yes
-  plugin_isocalendar_duration: full-year
-<!-- ====================================================== -->
-<!--                     ABOUT BLOCK                       -->
-<!-- ====================================================== -->
-
-<p align="center">
-  short calm description<br/>
-  no ambition lines<br/>
-  no noise<br/>
-  just facts
-</p>
-
-<br/>
-<br/>
-
-<!-- ====================================================== -->
-<!--                    TECH STACK GRID                     -->
-<!-- ====================================================== -->
-
-<h3 align="center">tech</h3>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=LANG1,LANG2,LANG3" />
-</p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=FRAMEWORK1,FRAMEWORK2,FRAMEWORK3" />
-</p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=TOOL1,TOOL2,TOOL3" />
-</p>
-
-<br/>
-<br/>
-
-<!-- ====================================================== -->
-<!--                  CURRENT FOCUS                         -->
-<!-- ====================================================== -->
-
-<h3 align="center">now</h3>
-
-<p align="center">
-  building → something<br/>
-  learning → something<br/>
-  exploring → something
-</p>
-
-<br/>
-<br/>
-
-<!-- ====================================================== -->
-<!--                    PROJECT SHOWCASE                    -->
-<!-- ====================================================== -->
-
-<h3 align="center">projects</h3>
-
-<p align="center">
-  ✦ project one — one line<br/>
-  ✦ project two — one line<br/>
-  ✦ project three — one line
-</p>
-
-<br/>
-<br/>
-
-<!-- ====================================================== -->
-<!--                     STATS (OPTIONAL)                   -->
-<!-- ====================================================== -->
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&hide_border=true&bg_color=00000000" />
-</p>
-
-<br/>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&hide_border=true&background=00000000" />
-</p>
-
-<br/>
-<br/>
-
-<!-- ====================================================== -->
-<!--                  AESTHETIC QUOTE                       -->
-<!-- ====================================================== -->
-
-<p align="center">
-  <i>
-    "quiet work. loud results."
-  </i>
-</p>
-
-<br/>
-<br/>
-
-<!-- ====================================================== -->
-<!--                    CONNECT                             -->
-<!-- ====================================================== -->
-
-<h3 align="center">connect</h3>
-
-<p align="center">
-  <a href="LINK">linkedin</a> · 
-  <a href="LINK">portfolio</a> · 
-  <a href="LINK">email</a>
-</p>
-
-<br/>
-<br/>
-
-<!-- ====================================================== -->
-<!--                       FOOTER                           -->
-<!-- ====================================================== -->
-
-<p align="center">
-  ⊹ last updated — YYYY ⊹
-</p>
+<!--options-->
+<table>
+  <tr>
+    <td align="center" nowrap="nowrap">Option</i></td><td align="center" nowrap="nowrap">Description</td>
+  </tr>
+  <tr>
+    <td nowrap="nowrap"><h4><code>plugin_isocalendar</code></h4></td>
+    <td rowspan="2"><p>Enable isocalendar plugin</p>
+<img width="900" height="1" alt=""></td>
+  </tr>
+  <tr>
+    <td nowrap="nowrap"><b>type:</b> <code>boolean</code>
+<br>
+<b>default:</b> no<br></td>
+  </tr>
+  <tr>
+    <td nowrap="nowrap"><h4><code>plugin_isocalendar_duration</code></h4></td>
+    <td rowspan="2"><p>Time range</p>
+<ul>
+<li><code>half-year</code>: 180 days</li>
+<li><code>full-year</code>: 1 year</li>
+</ul>
+<img width="900" height="1" alt=""></td>
+  </tr>
+  <tr>
+    <td nowrap="nowrap"><b>type:</b> <code>string</code>
+<br>
+<b>default:</b> half-year<br>
+<b>allowed values:</b><ul><li>half-year</li><li>full-year</li></ul></td>
+  </tr>
+</table>
+<!--/options-->
