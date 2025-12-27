@@ -68,8 +68,5 @@
 <h2 align="center" style="color:#F2A1C7;">Commit Calendar</h2>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kpriyars&bg_color=ffffff&color=F2A1C7&line=F2A1C7&point=F48FB1&area=true&hide_border=true" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kpriyars&bg_color=000000&color=F2A1C7&line=F2A1C7&point=F2A1C7&area=true&hide_border=true" />
 </p>
-
-
-
