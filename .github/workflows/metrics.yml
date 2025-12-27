@@ -1,0 +1,37 @@
+name: Generate Metrics
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # runs daily
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Generate Full-Year Isocalendar Metrics
+        uses: lowlighter/metrics@v3
+        with:
+          username: kpriyars
+          plugins: isocalendar
+          plugin_isocalendar_duration: full-year
+          theme: custom
+          theme_calendar_scale1: '#FFD6E7'
+          theme_calendar_scale2: '#FF9BC1'
+          theme_calendar_scale3: '#F25DA7'
+          theme_calendar_scale4: '#D61A7F'
+          output: metrics.svg
+
+      - name: Commit metrics.svg
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update GitHub Metrics"
+          file_pattern: metrics.svg
