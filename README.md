@@ -67,6 +67,11 @@
   <a href="https://www.arduino.cc/" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="Arduino" width="40" height="40"/></a>
   <a href="https://www.figma.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" width="40" height="40"/></a>
 </p>
+<h2 align="center" style="color:#F2A1C7;">Commit Calendar</h2>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kpriyars&bg_color=ffffff&color=F2A1C7&line=F2A1C7&point=F48FB1&area=true&hide_border=true" />
+</p>
 
 
 
