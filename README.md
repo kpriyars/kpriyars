@@ -10,6 +10,6 @@
 </p>
 
 <p align="center">
-  💻 Software Engineering · 🤖 AI/ML · 🧬 Bioinformatics  
-  🌱 Learning new technologies · 🛠 Building projects
+   Software Engineering ·  AI/ML ·  Bioinformatics  
+   Learning new technologies ·  Building projects
 </p>
